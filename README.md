@@ -1,4 +1,4 @@
-# 本项目作者：https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow
+# 本项目参考自：https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow
 <p align="center">
     <a href="https://www.youtube.com/watch?v=pieI7rOXELI&list=PLXO45tsB95cIplu-fLMpUEEZTwrDNh6Ba" target="_blank">
     <img width="60%" src="https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/RL_cover.jpg" style="max-width:100%;">

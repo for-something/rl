@@ -1,52 +1,33 @@
-from maze_env import Maze
+from maze_env import Para_env
 from RL_brain import DeepQNetwork
 
 
-def run_maze():
+def run_env():
     step = 0
-    for episode in range(300):
-        # initial observation
+    for episode in range(4000):
+        print("step=", step, "episode", episode // 50 * "=")
         observation = env.reset()
 
         while True:
-            # fresh env
-            env.render()
 
-            # RL choose action based on observation
             action = RL.choose_action(observation)
 
-            # RL take action and get next observation and reward
-            observation_, reward, done = env.step(action)
+            observation_, reward, done = env.step(observation, action)
 
             RL.store_transition(observation, action, reward, observation_)
 
-            if (step > 200) and (step % 5 == 0):
+            if (step > 100) and (step % 10 == 0):
                 RL.learn()
 
-            # swap observation
             observation = observation_
 
-            # break while loop when end of this episode
+            step += 1
             if done:
                 break
-            step += 1
-
-    # end of game
     print('game over')
-    env.destroy()
 
 
 if __name__ == "__main__":
-    # maze game
-    env = Maze()
-    RL = DeepQNetwork(env.n_actions, env.n_features,
-                      learning_rate=0.01,
-                      reward_decay=0.9,
-                      e_greedy=0.9,
-                      replace_target_iter=200,
-                      memory_size=2000,
-                      # output_graph=True
-                      )
-    env.after(100, run_maze)
-    env.mainloop()
-    RL.plot_cost()
+    env = Para_env()
+    RL = DeepQNetwork(10, 10)
+    run_env()
