@@ -1,3 +1,4 @@
+# 本项目作者：https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow
 <p align="center">
     <a href="https://www.youtube.com/watch?v=pieI7rOXELI&list=PLXO45tsB95cIplu-fLMpUEEZTwrDNh6Ba" target="_blank">
     <img width="60%" src="https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow/blob/master/RL_cover.jpg" style="max-width:100%;">
@@ -22,7 +23,7 @@ In these tutorials for reinforcement learning, it covers from the basic RL algor
     * [Q-learning](contents/2_Q_Learning_maze)
     * [Sarsa](contents/3_Sarsa_maze)
     * [Sarsa(lambda)](contents/4_Sarsa_lambda_maze)
-    * [Deep Q Network (DQN)](contents/5_Deep_Q_Network)
+    * [Deep Q Network (DQN)](contents/5_Deep_Q_Network_1)
     * [Using OpenAI Gym](contents/6_OpenAI_gym)
     * [Double DQN](contents/5.1_Double_DQN)
     * [DQN with Prioitized Experience Replay](contents/5.2_Prioritized_Replay_DQN)
@@ -41,7 +42,7 @@ In these tutorials for reinforcement learning, it covers from the basic RL algor
     * [LunarLander](experiments/Solve_LunarLander)
 
 # Some RL Networks
-### [Deep Q Network](contents/5_Deep_Q_Network)
+### [Deep Q Network](contents/5_Deep_Q_Network_1)
 
 <a href="contents/5_Deep_Q_Network">
     <img class="course-image" src="https://mofanpy.com/static/results/reinforcement-learning/4-3-2.png">
